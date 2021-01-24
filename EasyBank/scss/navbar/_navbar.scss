@@ -1,0 +1,28 @@
+.hamburger {
+  div {
+    width: 25px;
+    height: 2px;
+    margin: 7px;
+    background-color: #f00;
+  }
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  height: 60px;
+  background-color: #ffffff;
+  display: flex;
+
+
+
+  .brandLogo {
+    font-size: $font-lg;
+    font-weight: 800;
+    
+  }
+}

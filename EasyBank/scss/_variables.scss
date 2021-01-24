@@ -1,1 +1,82 @@
-$themeColor: green;
+/* -----------------------------
+.          COLORS
+----------------------------- */
+
+$red: #f44336;
+$green: #4caf50;
+$green2: #31d35c;
+$blue: #2196f3;
+
+
+
+$purple: #9c27b0;
+$orange: #ff9800;
+$yellow: #FFEB3B;
+$brown: #795548;
+
+
+$sweetPink: #ff0aa7;
+
+
+$paleWhite4: #fafafa;
+$paleWhite3: #f7f8fa;
+$paleWhite2: #f3f4f6;
+$paleWhite: #f1f2f4;
+
+
+$gray: #9698a6;
+$black: #2d314d;
+$secondaryBtnColor: $paleWhite;
+
+
+
+
+
+
+
+// shadow
+$awesomeShadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075);
+
+
+
+
+
+
+
+
+
+/* -----------------------------
+.          FONT SIZES
+----------------------------- */
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+
+
+
+
+
+
+
+
+/* -----------------------------
+.          SETTINGS
+----------------------------- */
+$themeColor: $green2; 
+$fontColor: $black;
+$bodyBG: $paleWhite3;
+
+
+$landingIcon: url("../srcImages/landingIcon.png") center/cover;
+
+
+
+
+$footerHeight: 120px;
+$wrapperBottomMargin: -120px;
+
+
+
+
+

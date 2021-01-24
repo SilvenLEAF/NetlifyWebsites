@@ -1,3 +1,12 @@
+/* -----------------------------
+.          COLORS
+----------------------------- */
+/* -----------------------------
+.          FONT SIZES
+----------------------------- */
+/* -----------------------------
+.          SETTINGS
+----------------------------- */
 /* ---------------------------
 .        MEDIA QUERIES
 --------------------------- */
@@ -11,5 +20,63 @@
   .hideOnPC {
     display: none;
   }
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Public Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #2d314d;
+  line-height: 1.3;
+  min-height: 350vh;
+  overflow-x: hidden;
+  background-color: #f7f8fa;
+}
+
+@media (min-width: 64em) {
+  body {
+    font-size: 1.125rem;
+  }
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.hamburger div {
+  width: 25px;
+  height: 2px;
+  margin: 7px;
+  background-color: #f00;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .brandLogo {
+  font-size: 1.25rem;
+  font-weight: 800;
 }
 /*# sourceMappingURL=style.css.map */
