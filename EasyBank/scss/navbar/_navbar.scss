@@ -1,28 +1,98 @@
+/* ---------------------------
+.         overlay
+--------------------------- */
+.overlay {
+  // opacity: 0;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  
+  background-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+
+/* ---------------------------
+.         hamburger
+--------------------------- */
 .hamburger {
+  position: absolute;
+  top: 14px;
+  right: 25px;
+
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+
   div {
     width: 25px;
     height: 2px;
     margin: 7px;
     background-color: #f00;
   }
+
+  &:hover {
+    > div:first-child { //This translateY(height+margin)
+      transform: translateY(9px) rotate(135deg);
+    }
+    > div:nth-child(2) {
+      opacity: 0;
+    }
+    > div:last-child { //This translateY(height+margin)
+      transform: translateY(-9px) rotate(-135deg);
+    }
+  }
+
+  
 }
 
 
+
+
+
+
+
+
+
+/* ---------------------------
+.         header
+--------------------------- */
 header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
-  height: 60px;
-  background-color: #ffffff;
+
+
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 
 
+  height: 60px;
+  padding: 0px 20px;
+
+
+
+  background-color: #ffffff;
+  box-shadow: $awesomeShadow;
+  
+  
 
   .brandLogo {
     font-size: $font-lg;
     font-weight: 800;
-    
+    text-align: center;
+    width: 100%;
+
+    cursor: pointer;
   }
+
+
+
+
+
+ 
 }

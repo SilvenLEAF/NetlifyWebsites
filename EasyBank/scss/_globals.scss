@@ -31,11 +31,18 @@ body {
 
   background-color: $bodyBG;
 
+ 
+
+ 
+ 
   @include breakpoint-up(large){
     font-size: $font-med;
   }
 
-  
+    
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 
