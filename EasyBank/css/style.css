@@ -68,7 +68,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #6649b8;
+  background: #f00;
 }
 
 /* ---------------------------
@@ -141,7 +141,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 60px;
-  padding: 0px 20px;
+  padding: 0px 30px;
   background-color: #ffffff;
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -151,8 +151,21 @@ header .brandLogo {
   font-size: 1.25rem;
   font-weight: 800;
   text-align: center;
-  width: 100%;
   cursor: pointer;
+}
+
+@media (max-width: 63.9375em) {
+  header .brandLogo {
+    width: 100%;
+  }
+}
+
+header .PCNav li {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #ddd;
+  font-size: 0.8rem;
 }
 
 main, .mobileNav {

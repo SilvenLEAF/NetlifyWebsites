@@ -72,7 +72,7 @@ header {
 
 
   height: 60px;
-  padding: 0px 20px;
+  padding: 0px 30px;
 
 
 
@@ -85,7 +85,11 @@ header {
     font-size: $font-lg;
     font-weight: 800;
     text-align: center;
-    width: 100%;
+    
+    @include breakpoint-down(medium){
+      width: 100%;
+    }
+
 
     cursor: pointer;
   }
@@ -94,5 +98,11 @@ header {
 
 
 
- 
+ .PCNav li {
+   display: inline-block;
+   margin-left: 10px;
+   padding: 10px 20px;
+   background-color: #ddd;
+   font-size: 0.8rem;
+ }
 }
