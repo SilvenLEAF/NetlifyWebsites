@@ -78,6 +78,13 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
+.mobileNav ul li {
+  margin: 5px;
+  padding: 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  list-style: none;
+}
+
 /* ---------------------------
 .         overlay
 --------------------------- */
