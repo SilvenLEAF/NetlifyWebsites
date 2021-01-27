@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AACA;;yCAEyC;AAIzC;;gCAEgC;AAwBhC;;gCAEgC",
-    "sources": [
-        "../../../MyMovieList/client/src/variables.scss"
-    ],
-    "names": [],
-    "file": "variables.css"
-}
