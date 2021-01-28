@@ -1,0 +1,71 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+};
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+/* --------------------------------
+.              BODY
+-------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: sans-serif;
+  color: $fontColor;
+
+  overflow-x: hidden;
+  background-color: $bodyBG;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;  
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #f00;    
+}
+
+
+
+
+
+
+
+
+/* ---------------------------
+.           defaults
+--------------------------- */
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
