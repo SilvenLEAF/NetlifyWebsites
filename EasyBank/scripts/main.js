@@ -9,4 +9,13 @@ hamBtn.addEventListener('click', e=>{
   console.log('fired')
   mobileNav.classList.toggle('open');
   hamBtn.classList.toggle('open');
+  overlay.classList.toggle('open');
+})
+
+
+overlay.addEventListener('click', e=>{
+  console.log('fired')
+  mobileNav.classList.toggle('open');
+  hamBtn.classList.toggle('open');
+  overlay.classList.toggle('open');
 })
