@@ -1,71 +1,61 @@
-@import './mobileNav';
+@import './moblieNav';
 
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 
+  padding: 30px;
 
-  width: 100vw;
   height: $navbarHeight;
-  background-color: $navbarBG;
-
-
-  padding: 0px 30px;  
-
-
+  background-color: $navbarBG;  
+  
+  
   ul.PCNav li {
     display: inline-block;
     margin: 10px;
     padding: 10px 20px;
-
     font-size: 0.8rem;
 
     background-color: #ddd;
   }
-
-
-
+  
+  
   .brandLogo {
     text-align: center;
-    
-    span.logo{
+
+    span.logo {
       cursor: pointer;
     }
-    
 
-    @include breakpoint-down(medium) {
-      width: 100%;      
+
+    @include breakpoint-down(medium){
+      width: 100%;
     }
   }
 
+
+
   .hamburger {
-    transition: $navTransition;    
+    transition: $navTransition;
+
     
-    > div {
+    div {
       width: 30px;
       height: 2px;
       margin: 7px;
-
       background-color: $themeColor;
     }
 
-    &.open {
+    .open {
       >div:first-child {
-        transform: translateY(9px) rotate(135deg);
+        @include transform('translateY(-9px) rotate(135deg)');
       }
-
-      >div:nth-child(2){
+      >div:nth-child(2) {
         opacity: 0;
       }
-
       >div:last-child {
-        transform: translateY(-9px) rotate(-135deg);
+        @include transform('translateY(9px) rotate(-135deg)');
       }
     }
   }
@@ -76,22 +66,21 @@ header {
 
 
 
-.overlay {
-  opacity: 0;
-  pointer-events: none;
 
+.overlay {
   position: fixed;
   top: $navbarHeight;
   right: 0;
   bottom: 0;
   left: 0;
 
-  transition: $navTransition;
+  opacity: 0;
+  pointer-events: none;
 
   background-color: rgba($color: #000000, $alpha: 0.2);
+  transition: $navTransition;
 
-
-  &.open{
+  .open {
     opacity: 1;
     pointer-events: all;
   }
