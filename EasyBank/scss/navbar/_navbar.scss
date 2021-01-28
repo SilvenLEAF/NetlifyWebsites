@@ -47,15 +47,15 @@ header {
       background-color: $themeColor;
     }
 
-    .open {
+    &.open {
       >div:first-child {
-        @include transform('translateY(-9px) rotate(135deg)');
+        @include transform('translateY(9px) rotate(135deg)');
       }
       >div:nth-child(2) {
         opacity: 0;
       }
       >div:last-child {
-        @include transform('translateY(9px) rotate(-135deg)');
+        @include transform('translateY(-9px) rotate(-135deg)');
       }
     }
   }

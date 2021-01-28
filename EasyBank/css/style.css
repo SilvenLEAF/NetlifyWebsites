@@ -148,18 +148,18 @@ header .hamburger div {
   background-color: #f44336;
 }
 
-header .hamburger .open > div:first-child {
-  -khtml-transform: translateY(-9px) rotate(135deg);
-  transform: translateY(-9px) rotate(135deg);
+header .hamburger.open > div:first-child {
+  -khtml-transform: translateY(9px) rotate(135deg);
+  transform: translateY(9px) rotate(135deg);
 }
 
-header .hamburger .open > div:nth-child(2) {
+header .hamburger.open > div:nth-child(2) {
   opacity: 0;
 }
 
-header .hamburger .open > div:last-child {
-  -khtml-transform: translateY(9px) rotate(-135deg);
-  transform: translateY(9px) rotate(-135deg);
+header .hamburger.open > div:last-child {
+  -khtml-transform: translateY(-9px) rotate(-135deg);
+  transform: translateY(-9px) rotate(-135deg);
 }
 
 .overlay {
