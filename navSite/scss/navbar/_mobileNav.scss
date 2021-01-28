@@ -20,8 +20,15 @@
     li {
       margin: 5px 0px;
       padding: 10px;
+      a{
+        color: $black;
+      }
 
-      background-color: green;
+      background-color: rgba($color: $green, $alpha: 0.3);
+
+      &:hover {
+        border-left: 5px solid $themeColor;
+      }
     }
   }
 

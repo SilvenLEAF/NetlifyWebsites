@@ -33,11 +33,11 @@ header {
 
   .brandLogo {
     text-align: center;
+    cursor: pointer;
     
 
     @include breakpoint-down(medium) {
-      width: 100%;
-      text-align: center;
+      width: 100%;      
     }
   }
 
