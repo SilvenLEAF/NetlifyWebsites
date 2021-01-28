@@ -1,17 +1,32 @@
+/* -----------------------------
+.          COLORS
+----------------------------- */
+/* ----------------------------
+.          SETTINGS
+---------------------------- */
+/* ---------------------------
+.        MEDIA QUERIES
+--------------------------- */
+@media (max-width: 63.9375em) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hideOnPC {
+    display: none;
+  }
+}
+
 html {
   height: 100%;
   box-sizing: border-box;
 }
 
-
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
-
-
-
 
 /* ---------------------------
 .            body
@@ -19,21 +34,15 @@ html {
 body {
   margin: 0;
   padding: 0;
-
   overflow-x: hidden;
-  background-color: $bodyBG;
-
+  background-color: #f1f2f4;
   font-family: sans-serif;
-  color: $fontColor;
-
-  &.noscroll {
-    overflow: hidden;
-  }
+  color: #2d314d;
 }
 
-
-
-
+body.noscroll {
+  overflow: hidden;
+}
 
 /* ---------------------------
 .           SCROLL
@@ -43,21 +52,12 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;  
+  background: #1e1e24;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #f00;    
+  background: #f00;
 }
-
-
-
-
-
-
-
-
-
 
 /* ---------------------------
 .           defaults
@@ -66,7 +66,7 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
-
 li {
   list-style: none;
 }
+/*# sourceMappingURL=style.css.map */
