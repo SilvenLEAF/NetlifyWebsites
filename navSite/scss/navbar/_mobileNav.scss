@@ -1,0 +1,32 @@
+.mobileNav {
+  position: fixed;
+  top: $navbarHeight;
+  right: 0;
+  bottom: 0;
+
+  width: 250px;
+
+
+  transition: $navTransition;
+  transform: translateX(300px);
+
+  background-color: $navbarBG;
+
+
+  div {
+    width: 100%;
+    height: 100%;
+
+    li {
+      margin: 5px 0px;
+      padding: 10px;
+
+      background-color: green;
+    }
+  }
+
+
+  &.open {
+    transform: translateX(0px);
+  }
+}

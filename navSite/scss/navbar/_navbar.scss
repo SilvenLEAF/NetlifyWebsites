@@ -1,0 +1,95 @@
+@import './mobileNav';
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  width: 100vw;
+  height: $navbarHeight;
+  background-color: $navbarBG;
+
+
+  padding: 0px 30px;  
+
+
+  ul.PCNav li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+
+    font-size: 0.8rem;
+
+    background-color: #ddd;
+  }
+
+
+
+  .brandLogo {
+    text-align: center;
+    
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .hamburger {
+    transition: $navTransition;    
+    
+    > div {
+      width: 30px;
+      height: 2px;
+      margin: 7px;
+
+      background-color: $themeColor;
+    }
+
+    &.open {
+      >div:first-child {
+        transform: translateY(9px) rotate(135deg);
+      }
+
+      >div:nth-child(2){
+        opacity: 0;
+      }
+
+      >div:last-child {
+        transform: translateY(-9px) rotate(-135deg);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  transition: $navTransition;
+
+  background-color: rgba($color: #000000, $alpha: 0.2);
+
+
+  &.open{
+    opacity: 1;
+    pointer-events: all;
+  }
+}
