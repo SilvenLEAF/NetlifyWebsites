@@ -24,13 +24,11 @@
 
 html {
   font-size: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, *::before, *::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -78,11 +76,40 @@ a, a:visited, a:hover {
   text-decoration: none;
 }
 
-.mobileNav ul li {
-  margin: 5px;
+.mobileNav {
+  background-color: #fff;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.mobileNav div {
+  margin: 0;
+  width: 250px;
+  height: 100%;
+  background-color: green;
+}
+
+.mobileNav div li {
+  width: 100%;
+  margin: 5px 0px;
   padding: 10px;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 255, 0.3);
   list-style: none;
+}
+
+.mobileNav div li a {
+  color: #fff;
+}
+
+.mobileNav div li a i {
+  margin-right: 10px;
+}
+
+.mobileNav div li:hover {
+  border-left: 5px solid #f00;
 }
 
 /* ---------------------------
@@ -105,7 +132,6 @@ a, a:visited, a:hover {
   top: 14px;
   right: 25px;
   cursor: pointer;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 
@@ -117,8 +143,7 @@ a, a:visited, a:hover {
 }
 
 .hamburger:hover > div:first-child {
-  -webkit-transform: translateY(9px) rotate(135deg);
-          transform: translateY(9px) rotate(135deg);
+  transform: translateY(9px) rotate(135deg);
 }
 
 .hamburger:hover > div:nth-child(2) {
@@ -126,8 +151,7 @@ a, a:visited, a:hover {
 }
 
 .hamburger:hover > div:last-child {
-  -webkit-transform: translateY(-9px) rotate(-135deg);
-          transform: translateY(-9px) rotate(-135deg);
+  transform: translateY(-9px) rotate(-135deg);
 }
 
 /* ---------------------------
@@ -138,20 +162,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   height: 60px;
   padding: 0px 30px;
   background-color: #ffffff;
-  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
-          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 header .brandLogo {
@@ -175,7 +192,7 @@ header .PCNav li {
   font-size: 0.8rem;
 }
 
-main, .mobileNav {
+main {
   margin-top: 60px;
 }
 /*# sourceMappingURL=style.css.map */

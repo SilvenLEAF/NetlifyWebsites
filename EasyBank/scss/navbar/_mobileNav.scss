@@ -1,11 +1,46 @@
 .mobileNav {
-  
-   ul {
-     li {
-       margin: 5px;
+  background-color: #fff;
+  position: fixed;
+  top: $navBarHeight;
+  bottom: 0;
+  right: 0;
+
+  box-shadow: $awesomeShadow;
+
+
+   div {
+     margin: 0;
+     
+    //  margin-top: 50px;
+    
+     width: 250px;
+     height: 100%;
+     
+     background-color: green;
+      li {       
+      width: 100%;
+       margin: 5px 0px;
        padding: 10px;
-       background-color: rgba($color: #ff0000, $alpha: 0.5);
+       background-color: rgba($color: #00f, $alpha: 0.3);
        list-style: none;
-     }
+
+       a{
+         i{
+           margin-right: 10px;
+        }
+        color: #fff;
+
+
+
+      }
+      
+      &:hover {
+        border-left: 5px solid #f00;          
+      }
+      
+    }
+
+
+
    }
 }
