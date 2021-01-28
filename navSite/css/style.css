@@ -127,6 +127,9 @@ header ul.PCNav li {
 
 header .brandLogo {
   text-align: center;
+}
+
+header .brandLogo span.logo {
   cursor: pointer;
 }
 
