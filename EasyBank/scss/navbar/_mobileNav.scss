@@ -6,6 +6,8 @@
   right: 0;
 
   box-shadow: $awesomeShadow;
+  transition: all 300ms ease-in-out;
+  transform: translateX(300px);
 
 
    div {
@@ -16,7 +18,7 @@
      width: 250px;
      height: 100%;
      
-     background-color: green;
+     
       li {       
       width: 100%;
        margin: 5px 0px;
@@ -43,4 +45,12 @@
 
 
    }
+}
+
+
+
+.mobileNav {
+  &.open {
+    transform: translateX(0px);
+  }
 }

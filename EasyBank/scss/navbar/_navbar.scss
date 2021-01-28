@@ -24,7 +24,7 @@
   right: 25px;
 
   cursor: pointer;
-  transition: all 300ms ease-in-out;
+  transition: all 1300ms ease-in-out;
 
   div {
     width: 25px;
@@ -33,7 +33,7 @@
     background-color: #f00;
   }
 
-  &:hover {
+  &.open {
     > div:first-child { //This translateY(height+margin)
       transform: translateY(9px) rotate(135deg);
     }
