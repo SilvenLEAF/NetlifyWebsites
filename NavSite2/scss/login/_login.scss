@@ -43,8 +43,10 @@ form {
 
   .btnHolder {
     text-align: right;
+    user-select: none !important;
 
     span {
+      user-select: none;
       background-color: $themeColor;
       padding: 10px;
       background-color: $themeColor;

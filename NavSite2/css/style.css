@@ -110,6 +110,7 @@ li {
 }
 
 header {
+  user-select: none !important;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -286,9 +287,11 @@ form div input {
 
 form .btnHolder {
   text-align: right;
+  user-select: none !important;
 }
 
 form .btnHolder span {
+  user-select: none;
   background-color: #0099ff;
   padding: 10px;
   background-color: #0099ff;
