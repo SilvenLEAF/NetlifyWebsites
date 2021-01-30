@@ -153,7 +153,8 @@ header .brandLogo {
   color: #fff;
 }
 
-header .brandLogo span.logo {
+header .brandLogo a.logo {
+  color: #fff;
   cursor: pointer;
   font-size: 2.5rem;
   font-family: Aladin;

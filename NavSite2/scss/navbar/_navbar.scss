@@ -54,8 +54,9 @@ header {
   .brandLogo {
     text-align: center;
     color: $navFontColor;
-
-    span.logo {
+    
+    a.logo {
+      color: $navFontColor;      
       cursor: pointer;
       font-size: 2.5rem; 
       font-family: Aladin;
