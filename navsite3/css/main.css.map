@@ -1,0 +1,14 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/main.scss",
+        "../scss/_variables.scss",
+        "../scss/_browserPrefix.scss",
+        "../scss/_global.scss",
+        "../scss/navbar/_navbar.scss",
+        "../scss/navbar/_animationOnNavOpen.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
