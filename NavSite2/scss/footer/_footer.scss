@@ -17,15 +17,20 @@ footer {
 }
 
 
-svg#footerSVG {
+svg.footerSVG {
   position: relative;
   top: 5px;
+
 }
 
-svg#headerSVG {
+svg.headerSVG {
   position: absolute;
   top: 20px;
   transform: rotateZ(180deg) rotateY(180deg);
+  
+  @include breakpoint-down(medium){
+    top: 50px;
+  }
     
 }
 

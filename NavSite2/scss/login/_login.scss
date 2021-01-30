@@ -1,13 +1,15 @@
 form {
+  position: relative;
   margin: 0 auto;
   width: 350px;
-  height: 350px;
+  // height: 350px;
   padding: 30px 30px;
   background-color: #eaeaea;
 
   font-size: 1.2rem;
 
   box-shadow: 6px 6px 6px rgba($color: #000000, $alpha: 0.2);
+  transform: scale(0.9);
 
 
   div {
@@ -15,6 +17,13 @@ form {
 
     label {
       display: block;
+    }
+    textarea{
+      margin: 10px;
+      padding: 20px;
+
+      width: 100%;
+      height: 100px;
     }
     input {
       margin: 0;
@@ -48,4 +57,10 @@ form {
   }
 
 
+}
+
+
+
+.aboutP {
+  position: relative;
 }

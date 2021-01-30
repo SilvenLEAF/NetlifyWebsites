@@ -133,10 +133,19 @@ header ul.PCNav li a {
   color: #fff;
 }
 
-header ul.PCNav li:hover a {
+header ul.PCNav li:not(.signUP):hover a {
   color: white;
   border-bottom: 3px solid #fff;
   padding-bottom: 10px;
+}
+
+header ul.PCNav li.signUP {
+  background-color: #dfdfdf;
+  border-radius: 30px;
+}
+
+header ul.PCNav li.signUP a {
+  color: #0099ff;
 }
 
 header .brandLogo {
@@ -232,16 +241,18 @@ h1 {
   font-family: "Potta One";
   font-weight: 300;
   text-decoration: underline;
+  position: relative;
 }
 
 form {
+  position: relative;
   margin: 0 auto;
   width: 350px;
-  height: 350px;
   padding: 30px 30px;
   background-color: #eaeaea;
   font-size: 1.2rem;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+  transform: scale(0.9);
 }
 
 form div {
@@ -250,6 +261,13 @@ form div {
 
 form div label {
   display: block;
+}
+
+form div textarea {
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  height: 100px;
 }
 
 form div input {
@@ -279,6 +297,10 @@ form .btnHolder span {
   cursor: pointer;
 }
 
+.aboutP {
+  position: relative;
+}
+
 main {
   min-height: 100vh;
 }
@@ -293,15 +315,21 @@ footer {
   position: relative;
 }
 
-svg#footerSVG {
+svg.footerSVG {
   position: relative;
   top: 5px;
 }
 
-svg#headerSVG {
+svg.headerSVG {
   position: absolute;
   top: 20px;
   transform: rotateZ(180deg) rotateY(180deg);
+}
+
+@media (max-width: 63.9375em) {
+  svg.headerSVG {
+    top: 50px;
+  }
 }
 
 main {

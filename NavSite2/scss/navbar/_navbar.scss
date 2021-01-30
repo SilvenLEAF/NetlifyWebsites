@@ -28,13 +28,25 @@ header {
 
     transition: $navTransition;
 
-    &:hover {
+
+    &:not(.signUP):hover {
       a {
         // color: $themeColor;
         color: complement($navFontColor);
         border-bottom: 3px solid $navFontColor;
         padding-bottom: 10px;
       }
+
+    }
+    
+  }
+  
+  ul.PCNav li.signUP {
+    background-color: $bodyBG;
+    border-radius: 30px;
+    
+    a{
+      color: $themeColor;
     }
   }
 
@@ -111,3 +123,6 @@ header {
     pointer-events: all;
   }
 }
+
+
+
