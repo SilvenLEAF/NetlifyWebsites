@@ -4,6 +4,8 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  
+  z-index: 5;
 
   display: flex;
   justify-content: space-between;
@@ -17,16 +19,34 @@ header {
   ul.PCNav li {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px;
-    background-color: #ddd;
+    margin: 5px;
+    // background-color: #ddd;
+    
+    a{
+      color: $navFontColor;
+    }
+
+    transition: $navTransition;
+
+    &:hover {
+      a {
+        // color: $themeColor;
+        color: complement($navFontColor);
+        border-bottom: 3px solid $navFontColor;
+        padding-bottom: 10px;
+      }
+    }
   }
 
 
   .brandLogo {
     text-align: center;
+    color: $navFontColor;
 
     span.logo {
       cursor: pointer;
+      font-size: 2.5rem; 
+      font-family: Aladin;
     }
 
 
@@ -45,7 +65,8 @@ header {
       height: 2px;
       margin: 7px;
 
-      background-color: $themeColor;
+      // background-color: $themeColor;
+      background-color: $navFontColor;
       transition: $navTransition;
     }
 
@@ -72,6 +93,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 5;
 
   clip-path: circle(0% at 100% 0%);
 
@@ -82,6 +104,7 @@ header {
   background-color: rgba($color: #000000, $alpha: 0.2);
 
   &.open {
+    cursor: pointer;
     clip-path: circle(150% at 100% 0%);
 
     // opacity: 1;

@@ -7,6 +7,8 @@
 /* ---------------------------
 .        MEDIA QUERIES
 --------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 @media (max-width: 63.9375em) {
   .hideOnMobile {
     display: none;
@@ -34,7 +36,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #f1f2f4;
+  background-color: #dfdfdf;
   overflow-x: hidden;
   color: #2d314d;
   font-family: sans-serif;
@@ -48,7 +50,7 @@ body.noscroll {
 .           SCROLL
 --------------------------- */
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -56,7 +58,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #f00;
+  border-radius: 30px;
+  background: #0099ff;
+  border: 3px solid #ff6600;
 }
 
 /* -------------------------
@@ -75,6 +79,7 @@ li {
   top: 60px;
   right: 0;
   bottom: 0;
+  z-index: 10;
   width: 250px;
   background-color: #fff;
   transition: all 300ms ease-in-out;
@@ -97,7 +102,7 @@ li {
 }
 
 .mobileNav > div li:hover {
-  border-left: 5px solid #f44336;
+  border-left: 5px solid #0099ff;
 }
 
 .mobileNav.open {
@@ -108,27 +113,41 @@ header {
   position: fixed;
   top: 0;
   width: 100vw;
+  z-index: 5;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
   height: 60px;
-  background-color: #fff;
+  background-color: #0099ff;
 }
 
 header ul.PCNav li {
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px;
-  background-color: #ddd;
+  margin: 5px;
+  transition: all 300ms ease-in-out;
+}
+
+header ul.PCNav li a {
+  color: #fff;
+}
+
+header ul.PCNav li:hover a {
+  color: white;
+  border-bottom: 3px solid #fff;
+  padding-bottom: 10px;
 }
 
 header .brandLogo {
   text-align: center;
+  color: #fff;
 }
 
 header .brandLogo span.logo {
   cursor: pointer;
+  font-size: 2.5rem;
+  font-family: Aladin;
 }
 
 @media (max-width: 63.9375em) {
@@ -141,7 +160,7 @@ header .hamburger > div {
   width: 30px;
   height: 2px;
   margin: 7px;
-  background-color: #f44336;
+  background-color: #fff;
   transition: all 300ms ease-in-out;
 }
 
@@ -165,6 +184,7 @@ header .hamburger.open > div:last-child {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: 5;
   clip-path: circle(0% at 100% 0%);
   pointer-events: none;
   transition: all 300ms ease-in-out;
@@ -172,7 +192,121 @@ header .hamburger.open > div:last-child {
 }
 
 .overlay.open {
+  cursor: pointer;
   clip-path: circle(150% at 100% 0%);
   pointer-events: all;
+}
+
+.landingLogo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.landingLogo .logoImage {
+  width: 300px;
+  height: 300px;
+  background: url("/images/Wallpaper.jpg") top/cover;
+  position: relative;
+  margin-top: 20px;
+}
+
+.landingLogo .logoImage:hover {
+  top: -6px;
+  left: -6px;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin: 20px;
+  text-align: justify;
+  text-indent: 50px;
+}
+
+h2 {
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Potta One";
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+form {
+  margin: 0 auto;
+  width: 350px;
+  height: 350px;
+  padding: 30px 30px;
+  background-color: #eaeaea;
+  font-size: 1.2rem;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+form div {
+  margin-bottom: 25px;
+}
+
+form div label {
+  display: block;
+}
+
+form div input {
+  margin: 0;
+  display: block;
+  margin-left: 10px;
+  border: none;
+  border-bottom: 2px solid #000;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+}
+
+form .btnHolder {
+  text-align: right;
+}
+
+form .btnHolder span {
+  background-color: #0099ff;
+  padding: 10px;
+  background-color: #0099ff;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  cursor: pointer;
+}
+
+main {
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #0099ff;
+  height: 120px;
+  text-align: center;
+  padding-top: 30px;
+  color: #fff;
+  font-size: 0.9rem;
+  position: relative;
+}
+
+svg#footerSVG {
+  position: relative;
+  top: 5px;
+}
+
+svg#headerSVG {
+  position: absolute;
+  top: 20px;
+  transform: rotateZ(180deg) rotateY(180deg);
+}
+
+main {
+  margin: 100px auto 60px auto;
+  overflow: auto;
+  max-width: 900px;
 }
 /*# sourceMappingURL=style.css.map */

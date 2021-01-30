@@ -5,7 +5,6 @@ const body = document.querySelector('body');
 
 
 
-
 hamBtn.addEventListener('click', e=> toggleMobileNav());
 overlay.addEventListener('click', e=> toggleMobileNav());
 

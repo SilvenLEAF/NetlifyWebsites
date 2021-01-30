@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  <!-- font awesome for hamburger -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!-- my CSS and JavaScript-->
+  <link rel="stylesheet" href="/css/style.css">
+  <script defer src="/scripts/main.js"></script>
+
+
+
+  <title>NavSite2.0</title>
+</head>
+<body>
+
+  <div class="overlay"></div>
+  <header>
+    <div class="brandLogo"><span class="logo">NavSite2.0</span></div>
+    <div class="hamburger hideOnPC">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <ul class="PCNav hideOnMobile">
+      <li><a href="/">Home</a></li>
+      <li><a href="/login.html">Log In</a></li>
+      <li><a href="#">Sign Up</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+  <nav class="mobileNav hideOnPC">
+    <div>
+      <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+      <li><a href="/login.html"><i class="fa fa-sign-in-alt"></i> Log In</a></li>
+      <li><a href="#"><i class="fa fa-user-plus"></i> Sign Up</a></li>
+      <li><a href="#"><i class="fa fa-info-circle"></i> About Us</a></li>
+      <li><a href="#"><i class="fa fa-envelope"></i> Contact</a></li>
+    </div>    
+  </nav>
+
+  <main>
+  
+
+    <h1>Log IN HERE</h1>
+    <form action="">
+      <h2>Log in</h2>
+      <div>
+        <label for="Email"><i class="fa fa-envelope"></i> Email</label>
+        <input type="email" placeholder="example@gmail.com">
+      </div>
+      
+      <div>
+        <label for="Password"><i class="fa fa-key"></i> Password</label>
+        <input type="password" placeholder="password here" >
+      </div>
+
+      <div class="btnHolder">
+        <span class="myBtn myLogInBtn"><i class="fa fa-sign-in-alt"></i> Log In</span>
+      </div>
+      
+    </form>
+    
+  </main>
+
+
+  <footer>
+    <div class="copyright">&copy; All rights reserved SilvenLEAF 2021</div>
+  </footer>
+</body>
+</html>
