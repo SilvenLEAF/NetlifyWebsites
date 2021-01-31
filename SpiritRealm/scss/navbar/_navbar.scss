@@ -22,18 +22,17 @@ header {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    // background-color: #ddd;
-    
+    font-size: 0.85rem;
     a{
       color: $navFontColor;
     }
-
-    transition: $navTransition;
-
-
+    
+    transition: border-bottom 300ms ease-in-out;
+    
+    
     &:not(.signUP):hover {
       a {
-        // color: $themeColor;
+        font-weight: 700;        
         color: complement($navFontColor);
         border-bottom: 3px solid $navFontColor;
         padding-bottom: 10px;
@@ -44,11 +43,24 @@ header {
   }
   
   ul.PCNav li.signUP {
-    background-color: $bodyBG;
-    border-radius: 30px;
+    // // border-radius: 30px;
+    // padding: 0;
     
     a{
+      background-color: $bodyBG;
       color: $themeColor;
+      padding: 10px 20px;
+      border-radius: 30px;
+      text-shadow: 3px 3px 6px rgba($color: #000000, $alpha: 0.03);
+      font-weight: 700;
+      
+    }
+    
+    &:hover {
+      a{        
+        color: invert($bodyBG);        
+      }
+
     }
   }
 

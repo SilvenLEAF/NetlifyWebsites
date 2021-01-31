@@ -24,6 +24,7 @@ form {
     }
     textarea{
       margin: 10px;
+      margin-bottom: 0;
       padding: 20px;
 
       width: 100%;
@@ -51,7 +52,9 @@ form {
   .btnHolder {
     text-align: right;
     user-select: none !important;
-
+    margin-top: 40px;
+    
+    
     span {
       user-select: none;
       background-color: $themeColor;
