@@ -1,71 +1,65 @@
-html {
-  height: 100%;
-  box-sizing: border-box;  
+/* ---------------------------
+.        MEDIA QUERIES
+--------------------------- */
+@media (max-width: 63.9375em) {
+  .hideOnMobile {
+    display: none;
+  }
 }
 
+@media (min-width: 64em) {
+  .hideOnPC {
+    display: none;
+  }
+}
 
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-
-
 body {
   margin: 0;
   padding: 0;
-
-  background-color: $bodyBG;
-  color: $fontColor;
+  background-color: #f1f2f4;
+  color: #111;
   font-family: sans-serif;
-
   overflow-x: hidden;
-
-
-  &.noscroll {
-    overflow: hidden;
-  }
 }
 
-
-
-
+body.noscroll {
+  overflow: hidden;
+}
 
 /* ---------------------------
 .           SCROLL
 --------------------------- */
 body::-webkit-scrollbar {
   width: 0.5rem;
-  
-  
 }
 
 body::-webkit-scrollbar-track {
-  background: #1e1e24;  
-  
+  background: #1e1e24;
 }
 
 body::-webkit-scrollbar-thumb {
   border-radius: 30px;
-  background: $themeColor;
-  border: 3px solid complement($color: $themeColor);    
+  background: #0099ff;
+  border: 3px solid #ff6600;
 }
-
-
-
-
-
 
 /* -------------------------------
 .            defaults
 ------------------------------- */
 li {
-  list-style: none;  
+  list-style: none;
 }
 
 a {
   text-decoration: none;
 }
-
-
-
+/*# sourceMappingURL=root.css.map */
