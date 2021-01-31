@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+
+/* --------------------------------
+.             body
+-------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $bodyBG;
+  overflow-x: hidden;
+  
+  color: $fontColor;
+  font-family: sans-serif;
+
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+
+
+
+
+
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: 0.5rem;
+  
+  
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;  
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: $themeColor;
+  border: 3px solid complement($color: $themeColor);    
+}
+
+
+
+
+
+
+
+/* -------------------------
+.         defaults
+------------------------- */
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+
+li {
+  list-style: none;
+}

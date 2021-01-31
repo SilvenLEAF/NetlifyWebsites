@@ -1,0 +1,19 @@
+@import './variables';
+@import './browserPrefix';
+@import './mediaQueries';
+@import './global';
+
+
+@import './navbar/navbar';
+@import './landing/landingPage';
+@import './login/login';
+@import './footer/footer';
+
+
+
+main {
+  margin: 100px auto 60px auto;
+  
+  overflow: auto;
+  max-width: 900px;
+}
