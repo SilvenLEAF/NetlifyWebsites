@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
 /* ---------------------------
 .        MEDIA QUERIES
 --------------------------- */
@@ -39,7 +41,7 @@ body.noscroll {
 .           SCROLL
 --------------------------- */
 body::-webkit-scrollbar {
-  width: 0.5rem;
+  width: .5rem;
 }
 
 body::-webkit-scrollbar-track {
@@ -49,7 +51,6 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   border-radius: 30px;
   background: #0099ff;
-  border: 3px solid #ff6600;
 }
 
 /* -------------------------------
@@ -61,5 +62,81 @@ li {
 
 a {
   text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  height: 60px;
+  background-color: #0099ff;
+}
+
+header ul.PCNav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 0.9rem;
+}
+
+header ul.PCNav li a:not(.PCNavLastBtn) {
+  color: #fff;
+  padding: 10px 20px;
+  transition: all 300ms ease-in-out;
+  position: relative;
+}
+
+header ul.PCNav li a:not(.PCNavLastBtn)::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0px;
+  transition: all 300ms ease-in-out;
+}
+
+header ul.PCNav li a:not(.PCNavLastBtn):hover::after {
+  width: 100%;
+}
+
+header ul.PCNav li a.PCNavLastBtn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #f1f2f4;
+  color: #0099ff;
+  position: relative;
+}
+
+header ul.PCNav li a.PCNavLastBtn:hover {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+  top: -3px;
+  left: -3px;
+}
+
+header .brandLogo {
+  font-family: Aladin, sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media (max-width: 63.9375em) {
+  header .brandLogo {
+    width: 100%;
+  }
+}
+
+header .hamburger > div {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background-color: #fff;
 }
 /*# sourceMappingURL=root.css.map */

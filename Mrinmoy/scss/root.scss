@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+
+
 @import './variables';
 @import './browserPrefix';
 @import './mediaQueries';
 @import './global';
 
 
+
+
+@import './components/navbar';
+@import './components/main';
+@import './components/footer';
