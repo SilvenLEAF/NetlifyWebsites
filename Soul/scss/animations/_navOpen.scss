@@ -1,0 +1,52 @@
+.hamburger {
+  transition: all 300ms ease-in-out;
+
+  &.open {
+    >div:first-child {
+      transform: translateY(9px) rotate(135deg);
+    }
+    >div:nth-child(2) {
+      opacity: 0;
+    }
+    >div {
+      transform: translateY(-9px) rotate(-135deg);
+    }
+  }
+
+}
+
+
+
+.overlay {
+  transition: all 300ms ease-in-out;
+  clip-path: circle(0% at 0% 50%);
+
+
+  &.open {
+    clip-path: circle(150% at 0% 50%);
+  }
+
+}
+
+
+
+.mobileNav {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-300px);
+  
+  &.open {
+    transform: translateX(0px);
+     animation: springyTranslate 300ms ease-in-out;
+   }
+}
+
+
+
+
+
+@keyframes springyTranslate {
+  0% { transform: translateX(-300px) };
+  50% { transform: translateX(20px) };
+  80% { transform: translateX(-10px) };
+  100% { transform: translateX(0px) };
+}

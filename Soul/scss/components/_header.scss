@@ -1,0 +1,123 @@
+@import '../animations/navOpen';
+
+header {
+  height: $navbarHeight;
+  color: #fff;
+  background-color: $navbarBG;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+
+
+
+  .PCNav li {
+    display: inline-block;
+
+    a {
+      padding: 10px 20px;
+      color: #fff;
+    }
+  }
+
+
+  .brandLogo {
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    font-family: "Aladin", sans-serif;
+
+    
+    @include breakpoint-down(medium){
+      width: 100%;
+    }
+  }
+
+
+  .hamburger {
+    >div {
+      width: 30px;
+      height: 2px;
+      margin: 7px;
+      background-color: #fff;
+      transition: all 300ms ease-in-out;
+    }
+  }
+
+}
+
+
+.overlay {
+  position: fixed;
+  top: $navbarHeight;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba($color: #000000, $alpha: 0.3);
+
+  
+}
+
+
+.mobileNav {
+  position: fixed;
+  top: $navbarHeight;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 250px;
+
+  div {
+    display: flex;
+    flex-flow: column;    
+    height: 100%;
+  
+    li:not(:last-child) {
+      margin: 5px 0px;
+      padding: 10px;
+      padding-left: 20px;
+      font-weight: 500;
+          
+      
+      a {
+        letter-spacing: 1.5px;
+        color: $fontColor;
+      }
+
+
+      &:hover {
+        border-left: 5px solid $themeColor;
+        background-color: rgba($color: $themeColor, $alpha: 0.1);
+
+        font-weight: 600;
+
+      }
+      
+    }
+    
+    li:last-child {        
+      margin: auto 0px 30px 0px;    
+      display: flex;
+      justify-content: center;
+
+      a {
+        font-size: 1.7rem;      
+        margin: 5px;        
+        padding: 5px;
+      }
+    }
+
+  }
+
+
+ 
+}
