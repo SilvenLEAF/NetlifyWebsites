@@ -1,1 +1,43 @@
 @import './animationOnNavOpen';
+
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+ 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+  height: $navbarHeight;  
+  padding: 0px 40px;
+  background-color: $navbarColor;
+
+  
+
+
+  ul li {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+  }
+
+
+  .hamburger {
+    >div {
+      width: 30px;
+      height: 2px;
+      margin: 7px;
+
+      background-color: $themeColor;
+    }
+
+    
+  }
+
+}
