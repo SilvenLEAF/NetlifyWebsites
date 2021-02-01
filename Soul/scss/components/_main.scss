@@ -1,12 +1,41 @@
 .headerSVG {
   transform: rotateZ(180deg) rotateY(180deg);
   position: absolute;
-  top: $navbarHeight;  
+  z-index: -1;
+  top: $navbarHeight - 2px;  
 }
 
 .footerSVG {
-  position: absolute;
-  bottom: 60px;
+  position: relative;
+  bottom: -5px;  
   z-index: -1;
   // display: none;
+}
+
+
+main {  
+  margin: $navbarHeight 30px 40px 30px;    
+  
+
+  .landingSection {
+    display: flex;
+    align-items: center;
+    
+    
+    .landingImage {
+      margin-left: 30px;
+      position: relative;
+
+      z-index: 5;
+
+      height: 300px;
+      width: 300px;
+      border-radius: 50%;
+      background: url("/images/Robert.jpg") center/cover;
+
+
+      
+     
+    }
+  }
 }
