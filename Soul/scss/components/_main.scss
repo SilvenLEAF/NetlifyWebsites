@@ -43,7 +43,7 @@ main {
     .landingImageHolder {
     
       .landingImage {      
-        margin: 20px auto;      
+        margin: 20px auto 0px auto;      
   
         
   
@@ -54,6 +54,10 @@ main {
         border-radius: 50%;
         background: url("/images/Robert.jpg") center/cover;
   
+        @include breakpoint-down(medium){
+          height: 250px;
+          width: 250px;
+        }
   
         &::after {
           display: block;
@@ -127,6 +131,24 @@ main {
         color: #fff;
         text-shadow: -4px 4px 4px rgba($color: #000000, $alpha: 0.3),
                      4px -4px 4px rgba($color: #000000, $alpha: 0.2);
+
+      }
+
+
+      .landingSubText {
+        position: relative;
+        top: -5px;        
+        margin: 0;
+        
+        font-size: 0.9rem;
+        @include breakpoint-up(medium){
+          top: -15px;
+          font-size: 1.5rem;
+        }
+
+        color: #555;
+        font-family: "Potta One";
+        text-align-last: right;
 
       }
     }

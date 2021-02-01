@@ -269,12 +269,19 @@ main .landingSection {
 }
 
 main .landingSection .landingImageHolder .landingImage {
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
   position: relative;
   height: 300px;
   width: 300px;
   border-radius: 50%;
   background: url("/images/Robert.jpg") center/cover;
+}
+
+@media (max-width: 63.9375em) {
+  main .landingSection .landingImageHolder .landingImage {
+    height: 250px;
+    width: 250px;
+  }
 }
 
 main .landingSection .landingImageHolder .landingImage::after {
@@ -322,6 +329,23 @@ main .landingSection .landingTextHolder .landingMainText {
 @media (min-width: 40em) {
   main .landingSection .landingTextHolder .landingMainText {
     font-size: 6rem;
+  }
+}
+
+main .landingSection .landingTextHolder .landingSubText {
+  position: relative;
+  top: -5px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  font-family: "Potta One";
+  text-align-last: right;
+}
+
+@media (min-width: 40em) {
+  main .landingSection .landingTextHolder .landingSubText {
+    top: -15px;
+    font-size: 1.5rem;
   }
 }
 
