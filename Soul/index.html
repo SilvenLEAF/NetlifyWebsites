@@ -8,6 +8,17 @@
   <!-- font awesome for hamburger -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+   <!-- Compiled and minified CSS -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+           
+
+
+
   <link rel="stylesheet" href="/css/root.css">
   <script defer src="/scripts/main.js"></script>
 
@@ -29,7 +40,7 @@
     <div class="brandLogo"><span class="logo">$ilvenLEAF</span></div>
 
     <ul class="PCNav hideOnMobile">
-      <li><a href="#">Home</a></li>
+      <li><a href="#contact">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li><a href="#">Log In</a></li>
@@ -160,7 +171,7 @@
         </div>
 
         <div class="flexDataHolder">
-          <h2>Contact <i class="fa fa-envelope"></i></h2>
+          <h2 id="contact" class="scrollspy" >Contact <i class="fa fa-envelope"></i></h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, recusandae laudantium? Optio id quae soluta quasi! Aliquid laborum aliquam animi ea at optio molestias tenetur recusandae aperiam assumenda nam pariatur maxime totam laboriosam, asperiores eos tempora repellat officia exercitationem sit velit a? Tempore totam assumenda facere esse, dicta atque modi?
           </p>
@@ -176,5 +187,17 @@
       &copy; All rights reserved  SilvenLEAF 2021
     </div>
   </footer>
+
+
+
+  <script>
+    
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+       
+      
+    
+  </script>
 </body>
 </html>
