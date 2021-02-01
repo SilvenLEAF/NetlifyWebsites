@@ -75,20 +75,25 @@ header {
   bottom: 0;
   background-color: #fff;
   width: 250px;
+  user-select: none;
+
 
   div {
     display: flex;
     flex-flow: column;    
     height: 100%;
+    width: 100%;
   
     li:not(:last-child) {
       margin: 5px 0px;
-      padding: 10px;
-      padding-left: 20px;
+      padding: 10px 0px;
       font-weight: 500;
+      width: 100%;
           
       
       a {
+        display: block;
+        padding-left: 20px;
         letter-spacing: 1.5px;
         color: $fontColor;
       }
