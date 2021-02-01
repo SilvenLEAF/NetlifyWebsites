@@ -120,6 +120,12 @@ header {
   user-select: none;
 }
 
+@media (max-width: 63.9375em) {
+  header {
+    padding: 0px 20px;
+  }
+}
+
 header .PCNav li {
   display: inline-block;
   margin: 5px;
