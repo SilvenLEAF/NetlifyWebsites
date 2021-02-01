@@ -22,6 +22,7 @@ body {
   background-color: #f1f2f4;
   font-family: sans-serif;
   color: #222;
+  overflow-x: hidden;
 }
 
 li {
@@ -229,22 +230,64 @@ header .hamburger > div {
 }
 
 main {
-  margin: 60px 30px 40px 30px;
+  margin: 60px 0px 40px 0px;
+  overflow-x: hidden;
 }
 
 main .landingSection {
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 10px;
 }
 
-main .landingSection .landingImage {
-  margin-left: 30px;
+main .landingSection .landingImageHolder .landingImage {
+  margin: 20px auto;
   position: relative;
-  z-index: 5;
   height: 300px;
   width: 300px;
   border-radius: 50%;
   background: url("/images/Robert.jpg") center/cover;
+}
+
+main .landingSection .landingImageHolder .landingImage::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+  background-color: red;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 3px -3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: rotateZ(135deg) translate(-3%, 3%);
+}
+
+main .landingSection .landingImageHolder .landingImage::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+  background-color: #fff;
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: rotateZ(-135deg) translate(3%, 3%);
+}
+
+main .landingSection .landingTextHolder .hi {
+  background-color: #ddd;
+  padding: 10px 20px;
+  width: 60px;
+  border-radius: 30px;
+}
+
+main .landingSection .landingTextHolder .landingMainText {
+  font-size: 3rem;
 }
 
 main {
