@@ -2,14 +2,23 @@
   transform: rotateZ(180deg) rotateY(180deg);
   position: absolute;
   z-index: -1;
-  top: $navbarHeight - 2px;  
+  top: $navbarHeight - 2px; 
+ 
+  path {
+    fill: $themeColor !important; 
+  }
+
+  
 }
 
 .footerSVG {
   position: relative;
   bottom: -5px;  
   z-index: -1;
-  // display: none;
+
+  path {
+    fill: $themeColor !important; 
+  }
 }
 
 
@@ -105,7 +114,20 @@ main {
       }
 
       .landingMainText {
-        font-size: 3rem;
+        margin: 0;
+
+
+        font-size: 3rem;        
+        @include breakpoint-up(medium){
+          font-size: 6rem;
+        }
+
+        font-family: Aladin;
+        letter-spacing: 3px;
+        color: #fff;
+        text-shadow: -4px 4px 4px rgba($color: #000000, $alpha: 0.3),
+                     4px -4px 4px rgba($color: #000000, $alpha: 0.2);
+
       }
     }
   }

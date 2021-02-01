@@ -33,6 +33,22 @@ a {
   text-decoration: none;
 }
 
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #0099ff;
+}
+
 .hamburger {
   transition: all 300ms ease-in-out;
 }
@@ -223,10 +239,18 @@ header .hamburger > div {
   top: 58px;
 }
 
+.headerSVG path {
+  fill: #0099ff !important;
+}
+
 .footerSVG {
   position: relative;
   bottom: -5px;
   z-index: -1;
+}
+
+.footerSVG path {
+  fill: #0099ff !important;
 }
 
 main {
@@ -287,7 +311,18 @@ main .landingSection .landingTextHolder .hi {
 }
 
 main .landingSection .landingTextHolder .landingMainText {
+  margin: 0;
   font-size: 3rem;
+  font-family: Aladin;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3), 4px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 40em) {
+  main .landingSection .landingTextHolder .landingMainText {
+    font-size: 6rem;
+  }
 }
 
 main {
