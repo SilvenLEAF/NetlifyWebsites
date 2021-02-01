@@ -16,7 +16,7 @@ header {
   align-items: center;
   padding: 0 50px;
 
-
+  user-select: none;
 
   .PCNav {
     li {
@@ -69,6 +69,8 @@ header {
     text-align: center;
     cursor: pointer;
     font-family: "Aladin", sans-serif;
+
+    
 
     
     @include breakpoint-down(medium){
