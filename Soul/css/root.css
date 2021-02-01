@@ -182,6 +182,18 @@ header .hamburger > div {
   padding: 5px;
 }
 
+.headerSVG {
+  transform: rotateZ(180deg) rotateY(180deg);
+  position: absolute;
+  top: 60px;
+}
+
+.footerSVG {
+  position: absolute;
+  bottom: 60px;
+  z-index: -1;
+}
+
 main {
   min-height: 100vh;
   margin-bottom: -120px;

@@ -1,0 +1,12 @@
+.headerSVG {
+  transform: rotateZ(180deg) rotateY(180deg);
+  position: absolute;
+  top: $navbarHeight;  
+}
+
+.footerSVG {
+  position: absolute;
+  bottom: 60px;
+  z-index: -1;
+  // display: none;
+}
