@@ -10,8 +10,7 @@ hamburger.addEventListener('click', e=> comeMyNav());
 overlay.addEventListener('click', e=> comeMyNav());
 
 
-for(let i=0; i<sideNavClose.length; i++){
-  console.log('fired')
+for(let i=0; i<sideNavClose.length; i++){  
   sideNavClose[i].addEventListener('click', e=> comeMyNav());
 }
 
