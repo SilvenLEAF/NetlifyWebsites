@@ -8,6 +8,10 @@ body {
   color: $fontColor;
 
   overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
 }
 
 

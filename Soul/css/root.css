@@ -25,6 +25,10 @@ body {
   overflow-x: hidden;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 li {
   list-style: none;
 }
