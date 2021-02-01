@@ -400,6 +400,31 @@ main .mainContent p {
   text-align: justify;
 }
 
+.flexInfoHolder {
+  display: flex;
+  margin-top: 50px;
+}
+
+@media (max-width: 63.9375em) {
+  .flexInfoHolder {
+    display: block;
+  }
+}
+
+.flexInfoHolder .flexImageHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexInfoHolder .flexImageHolder img {
+  width: 270px;
+}
+
+.flexInfoHolder:nth-child(2n+1) {
+  flex-flow: row-reverse;
+}
+
 main {
   min-height: 100vh;
   margin-bottom: -120px;
