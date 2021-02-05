@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: sans-serif;
+  font-family: Roboto, sans-serif;
   color: $fontColor;
 
   overflow-x: hidden;
@@ -62,7 +62,7 @@ body::-webkit-scrollbar-thumb {
 /* ---------------------------
 .           defaults
 --------------------------- */
-a, a:visited, a:hover {
+a{
   text-decoration: none;
 }
 
