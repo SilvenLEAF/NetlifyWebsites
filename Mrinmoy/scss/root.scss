@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+
+@import './variables';
+@import './browserPrefix';
+@import './mediaQueries';
+@import './global';
+
+@import './components/header';
+@import './components/main';
+@import './components/footer';

@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  background-color: $bodyBG;
+  font-family: sans-serif;
+  color: $fontColor;
+
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+}
+
+
+li {
+  list-style: none;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+  
+  
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;  
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: $themeColor;  
+}
+
+

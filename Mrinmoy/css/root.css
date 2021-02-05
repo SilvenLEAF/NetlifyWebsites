@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Aladin&family=Potta+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Potta+One&display=swap");
+/* ---------------------------
+.        MEDIA QUERIES
+--------------------------- */
+@media (max-width: 63.9375em) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hideOnPC {
+    display: none;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f1f2f4;
+  font-family: sans-serif;
+  color: #222;
+  overflow-x: hidden;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: #0099ff;
+}
+
+.hamburger {
+  transition: all 300ms ease-in-out;
+}
+
+.hamburger.open > div:first-child {
+  transform: translateY(9px) rotate(135deg);
+}
+
+.hamburger.open > div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open > div {
+  transform: translateY(-9px) rotate(-135deg);
+}
+
+.overlay {
+  transition: all 300ms ease-in-out;
+  clip-path: circle(0% at 0% 50%);
+}
+
+.overlay.open {
+  clip-path: circle(150% at 0% 50%);
+}
+
+.mobileNav {
+  transition: all 500ms ease-in-out;
+  transform: translateX(-300px);
+}
+
+.mobileNav.open {
+  transform: translateX(0px);
+  animation: springyTranslate 300ms ease-in-out;
+}
+
+@keyframes springyTranslate {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+header {
+  height: 60px;
+  color: #fff;
+  background-color: #0099ff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  user-select: none;
+}
+
+@media (max-width: 63.9375em) {
+  header {
+    padding: 0px 20px;
+  }
+}
+
+header .PCNav li {
+  display: inline-block;
+  margin: 5px;
+  font-size: 0.9rem;
+}
+
+header .PCNav li a {
+  padding: 10px 15px;
+  color: #fff;
+  position: relative;
+}
+
+header .PCNav li:not(:last-child) a::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 30px;
+  transition: all 300ms ease-in-out;
+}
+
+header .PCNav li:not(:last-child) a:hover::after {
+  width: 100%;
+}
+
+header .PCNav li:last-child a {
+  padding: 10px 15px;
+  background-color: #f1f2f4;
+  border-radius: 30px;
+  color: #0099ff;
+}
+
+header .brandLogo {
+  font-size: 2.5rem;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Aladin", sans-serif;
+}
+
+header .brandLogo .logo {
+  color: #fff;
+}
+
+@media (max-width: 63.9375em) {
+  header .brandLogo {
+    width: 100%;
+  }
+}
+
+header .hamburger > div {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background-color: #fff;
+  transition: all 300ms ease-in-out;
+}
+
+.overlay {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mobileNav {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  z-index: 300;
+  background-color: #fff;
+  width: 250px;
+  user-select: none;
+}
+
+.mobileNav div {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.mobileNav div li:not(:last-child) {
+  margin: 5px 0px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.mobileNav div li:not(:last-child) a {
+  display: block;
+  padding: 10px 0px;
+  padding-left: 20px;
+  letter-spacing: 1.5px;
+  color: #222;
+}
+
+.mobileNav div li:not(:last-child):hover {
+  border-left: 5px solid #0099ff;
+  background-color: rgba(0, 153, 255, 0.1);
+  font-weight: 600;
+}
+
+.mobileNav div li:last-child {
+  margin: auto 0px 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.mobileNav div li:last-child a {
+  font-size: 1.7rem;
+  margin: 5px;
+  padding: 5px;
+}
+
+.headerSVG {
+  transform: rotateZ(180deg) rotateY(180deg);
+  position: absolute;
+  z-index: -1;
+  top: 58px;
+}
+
+.headerSVG path {
+  fill: #0099ff !important;
+}
+
+.footerSVG {
+  position: relative;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.footerSVG path {
+  fill: #0099ff !important;
+}
+
+main {
+  margin: 60px 0px 40px 0px;
+  overflow-x: hidden;
+}
+
+main .landingSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin: 0 10px;
+}
+
+@media (min-width: 40em) {
+  main .landingSection {
+    min-height: calc(100vh - 60px);
+  }
+}
+
+main .landingSection .landingImageHolder .landingImage {
+  margin: 20px auto 0px auto;
+  position: relative;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  background: url("/images/Robert.jpg") center/cover;
+  border: 4px solid #f1f2f4;
+}
+
+@media (max-width: 63.9375em) {
+  main .landingSection .landingImageHolder .landingImage {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+main .landingSection .landingImageHolder .landingImage::after {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+  background-color: red;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 3px -3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: rotateZ(135deg) translate(-3%, 3%);
+}
+
+main .landingSection .landingImageHolder .landingImage::before {
+  display: block;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 110%;
+  background-color: #fff;
+  box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transform: rotateZ(-135deg) translate(3%, 3%);
+}
+
+main .landingSection .landingTextHolder .hi {
+  background-color: #ddd;
+  padding: 10px 20px;
+  width: 60px;
+  border-radius: 30px;
+  transition: all 300ms ease-in-out;
+  color: #555;
+  font-family: "Potta One";
+}
+
+main .landingSection .landingTextHolder .hi:hover {
+  transform: rotateZ(360deg);
+}
+
+main .landingSection .landingTextHolder .landingMainText {
+  margin: 0;
+  font-size: 3rem;
+  font-family: Aladin;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.3), 4px -4px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 40em) {
+  main .landingSection .landingTextHolder .landingMainText {
+    font-size: 6rem;
+  }
+}
+
+main .landingSection .landingTextHolder .landingSubText {
+  position: relative;
+  top: -5px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+  font-family: "Potta One";
+  text-align-last: right;
+}
+
+@media (min-width: 40em) {
+  main .landingSection .landingTextHolder .landingSubText {
+    top: -15px;
+    font-size: 1.5rem;
+  }
+}
+
+main .mainContent {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+main .mainContent h2 {
+  margin: 20px;
+  font-family: Dosis, sans-serif;
+  font-size: 1.9rem;
+}
+
+main .mainContent h2::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 70px;
+  background-color: #555;
+}
+
+main .mainContent p {
+  margin: 20px;
+  text-align: justify;
+}
+
+.flexInfoHolder {
+  display: flex;
+  margin-top: 50px;
+}
+
+@media (max-width: 63.9375em) {
+  .flexInfoHolder {
+    display: block;
+  }
+}
+
+.flexInfoHolder .flexImageHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexInfoHolder .flexImageHolder img {
+  width: 270px;
+}
+
+.flexInfoHolder:nth-child(2n+1) {
+  flex-flow: row-reverse;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: -120px;
+}
+
+main::after, footer {
+  display: block;
+  content: "";
+  height: 120px;
+}
+
+footer {
+  width: 100%;
+  background-color: #0099ff;
+}
+
+footer .copyright {
+  color: #fff;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 0.7rem;
+}
+
+@media (min-width: 40em) {
+  footer .copyright {
+    font-size: 0.9rem;
+  }
+}
+/*# sourceMappingURL=root.css.map */

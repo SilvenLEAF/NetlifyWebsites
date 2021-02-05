@@ -1,0 +1,232 @@
+.headerSVG {
+  transform: rotateZ(180deg) rotateY(180deg);
+  position: absolute;
+  z-index: -1;
+  top: $navbarHeight - 2px; 
+ 
+  path {
+    fill: $themeColor !important; 
+  }
+
+  
+}
+
+.footerSVG {
+  position: relative;
+  bottom: -5px;  
+  z-index: -1;
+
+  path {
+    fill: $themeColor !important; 
+  }
+}
+
+
+main {  
+  margin: $navbarHeight 0px 40px 0px;    
+  overflow-x: hidden;
+  
+  
+
+  .landingSection {    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    margin: 0 10px;
+    
+
+    @include breakpoint-up(medium){
+      min-height: calc(100vh - #{$navbarHeight});
+    }
+
+
+
+    .landingImageHolder {
+    
+      .landingImage {      
+        margin: 20px auto 0px auto;      
+  
+        
+  
+        position: relative;
+  
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background: url("/images/Robert.jpg") center/cover;
+
+        border: 4px solid $bodyBG;
+  
+        @include breakpoint-down(medium){
+          height: 250px;
+          width: 250px;
+        }
+  
+        &::after {
+          display: block;
+          content: "";
+          
+          position: absolute;
+          z-index: -1;
+          
+          width: 100%;
+          height: 110%;
+  
+          background-color: red;
+          box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.2),
+          3px -3px 3px rgba($color: #000000, $alpha: 0.3);
+          border-radius: 50%;
+  
+          transform: rotateZ(135deg) translate(-3%, 3%);
+  
+        }      
+       
+  
+        &::before {
+          display: block;
+          content: "";
+          
+          position: absolute;
+          z-index: -1;
+          
+          width: 100%;
+          height: 110%;
+  
+          background-color: #fff;
+          box-shadow: -3px -3px 3px rgba($color: #000000, $alpha: 0.2),
+          3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+          border-radius: 50%;
+  
+          transform: rotateZ(-135deg) translate(3%, 3%);
+  
+        }      
+  
+  
+      }
+    
+    
+    
+         
+     
+    }
+ 
+    
+
+    .landingTextHolder {
+      .hi {
+        background-color: #ddd;
+        padding: 10px 20px;
+        width: 60px;
+        border-radius: 30px;
+
+        transition: all 300ms ease-in-out;
+
+        &:hover {
+          transform: rotateZ(360deg)
+        }
+
+        color: #555;
+        font-family: "Potta One";        
+      }
+
+      .landingMainText {
+        margin: 0;
+
+
+        font-size: 3rem;        
+        @include breakpoint-up(medium){
+          font-size: 6rem;
+        }
+
+        font-family: Aladin;
+        letter-spacing: 3px;
+        color: #fff;
+        text-shadow: -4px 4px 4px rgba($color: #000000, $alpha: 0.3),
+                     4px -4px 4px rgba($color: #000000, $alpha: 0.2);
+
+      }
+
+
+      .landingSubText {
+        position: relative;
+        top: -5px;        
+        margin: 0;
+        
+        font-size: 0.9rem;
+        @include breakpoint-up(medium){
+          top: -15px;
+          font-size: 1.5rem;
+        }
+
+        color: #555;
+        font-family: "Potta One";
+        text-align-last: right;
+
+      }
+    }
+  }
+
+
+  .mainContent {
+    margin: 0 auto;
+    max-width: 800px;
+
+    h2 {      
+      margin: 20px;
+
+      font-family: Dosis, sans-serif;
+      font-size: 1.9rem;
+
+      &::after {        
+        display: block;
+        content: "";
+
+        height: 3px;
+        width: 70px;
+
+        background-color: #555;
+      }
+    }
+
+    p {
+      margin: 20px;
+      text-align: justify;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+.flexInfoHolder {
+  display: flex;
+  margin-top: 50px;
+  @include breakpoint-down(medium){
+    display: block;
+  }
+
+  .flexImageHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 270px;
+    }
+  }
+}
+
+
+.flexInfoHolder:nth-child(2n+1) {
+  flex-flow: row-reverse;  
+}
