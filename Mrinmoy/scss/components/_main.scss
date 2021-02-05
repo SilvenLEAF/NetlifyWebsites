@@ -51,23 +51,24 @@ main {
     
       .landingImage {      
         margin: 20px auto 0px auto;      
-  
-        
-  
+
         position: relative;
-  
+        
         height: 300px;
         width: 300px;
         border-radius: 50%;
         background: url("/images/Robert.jpg") center/cover;
-
+        
         border: 4px solid $bodyBG;
-  
+        box-shadow: 3px -3px 3px rgba($color: #000000, $alpha: 0.2),
+        -3px 3px 3px rgba($color: #000000, $alpha: 0.3);
+        
+        
         @include breakpoint-down(medium){
           height: 250px;
           width: 250px;
         }
-  
+        
         &::after {
           display: block;
           content: "";
@@ -77,14 +78,15 @@ main {
           
           width: 100%;
           height: 110%;
-  
+          
           background-color: red;
           box-shadow: 3px 3px 3px rgba($color: #000000, $alpha: 0.2),
           3px -3px 3px rgba($color: #000000, $alpha: 0.3);
           border-radius: 50%;
-  
+          
           transform: rotateZ(135deg) translate(-3%, 3%);
-  
+          
+          transition: all 300ms ease-in-out;
         }      
        
   
@@ -104,10 +106,18 @@ main {
           border-radius: 50%;
   
           transform: rotateZ(-135deg) translate(3%, 3%);
-  
+          transition: all 300ms ease-in-out;
         }      
   
-  
+        
+
+        &:hover::before {
+          background-color: red;
+        }
+        &:hover::after {
+          background-color: #fff;
+        }
+        
       }
     
     
@@ -126,6 +136,7 @@ main {
         border-radius: 30px;
 
         transition: all 300ms ease-in-out;
+        user-select: none;
 
         &:hover {
           transform: rotateZ(360deg)
@@ -222,6 +233,12 @@ main {
     align-items: center;
     img {
       width: 270px;
+      transition: all 300ms ease-in-out;
+      &:hover {
+        // filter: hue-rotate(23)
+        filter: grayscale(100%);
+
+      }
     }
   }
 }

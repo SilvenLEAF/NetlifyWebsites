@@ -298,6 +298,7 @@ main .landingSection .landingImageHolder .landingImage {
   border-radius: 50%;
   background: url("/images/Robert.jpg") center/cover;
   border: 4px solid #f1f2f4;
+  box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.2), -3px 3px 3px rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 63.9375em) {
@@ -318,6 +319,7 @@ main .landingSection .landingImageHolder .landingImage::after {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2), 3px -3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   transform: rotateZ(135deg) translate(-3%, 3%);
+  transition: all 300ms ease-in-out;
 }
 
 main .landingSection .landingImageHolder .landingImage::before {
@@ -331,6 +333,15 @@ main .landingSection .landingImageHolder .landingImage::before {
   box-shadow: -3px -3px 3px rgba(0, 0, 0, 0.2), 3px 3px 3px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   transform: rotateZ(-135deg) translate(3%, 3%);
+  transition: all 300ms ease-in-out;
+}
+
+main .landingSection .landingImageHolder .landingImage:hover::before {
+  background-color: red;
+}
+
+main .landingSection .landingImageHolder .landingImage:hover::after {
+  background-color: #fff;
 }
 
 main .landingSection .landingTextHolder .hi {
@@ -339,6 +350,7 @@ main .landingSection .landingTextHolder .hi {
   width: 60px;
   border-radius: 30px;
   transition: all 300ms ease-in-out;
+  user-select: none;
   color: #555;
   font-family: "Potta One";
 }
@@ -422,6 +434,11 @@ main .mainContent p {
 
 .flexInfoHolder .flexImageHolder img {
   width: 270px;
+  transition: all 300ms ease-in-out;
+}
+
+.flexInfoHolder .flexImageHolder img:hover {
+  filter: grayscale(100%);
 }
 
 .flexInfoHolder:nth-child(2n+1) {
