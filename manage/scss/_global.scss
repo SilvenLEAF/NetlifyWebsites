@@ -1,0 +1,55 @@
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+  
+  
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;  
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: $themeColor;  
+}
+
+
+/* ---------------------------
+.           GLOBAL
+--------------------------- */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  background-color: $bodyBG;
+  color: $fontColor;
+  font-family: sans-serif;
+
+  overflow-x: hidden;
+
+  &.noscroll {
+    overflow: hidden;
+  }
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
