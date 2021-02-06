@@ -1,0 +1,64 @@
+/* ---------------------------
+.        MEDIA QUERIES
+--------------------------- */
+@media (max-width: 63.9375em) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hideOnPC {
+    display: none;
+  }
+}
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: orangered;
+}
+
+/* ---------------------------
+.           GLOBAL
+--------------------------- */
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f2f4;
+  color: #222;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=root.css.map */
