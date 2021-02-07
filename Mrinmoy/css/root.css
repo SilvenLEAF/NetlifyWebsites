@@ -445,6 +445,11 @@ main .mainContent p {
   flex-flow: row-reverse;
 }
 
+.contactHolder > div > div {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 main {
   min-height: 100vh;
   margin-bottom: -120px;
