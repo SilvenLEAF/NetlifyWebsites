@@ -1,0 +1,51 @@
+$navTransition: all 300ms ease-in-out;
+
+
+.hamburger {
+  >div {
+    transition: $navTransition;
+  }
+
+  &.open {
+  
+    >div:first-child {
+      @include transform("translateY(9px) rotate(135deg)");
+    }
+    >div:nth-child(2) {
+      opacity: 0;
+    }
+    >div:last-child {
+      @include transform("translateY(-9px) rotate(-135deg)");
+    }
+  }
+}
+
+
+
+.overlay {
+  clip-path: circle(0% at 50% 0%);
+  transition: $navTransition;
+  
+  &.open {
+    clip-path: circle(150% at 50% 0%);
+  }
+}
+
+
+.mobileNav {
+  transition: $navTransition;
+  @include transform("translateY(-700px)");
+  
+  &.open {
+    transform: translateY(0px);
+    animation: springyDrop 300ms ease-in-out backwards;
+  }
+}
+
+
+@keyframes springyDrop {
+  0% { transform: translateY(-700px) scale(0); }
+  60% { transform: translateY(20px); }
+  90% { transform: translateY(-20px); }
+  100% { transform: translateY(0px) scale(1); }
+}

@@ -101,6 +101,59 @@ a {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.hamburger > div {
+  transition: all 300ms ease-in-out;
+}
+
+.hamburger.open > div:first-child {
+  -khtml-transform: translateY(9px) rotate(135deg);
+  transform: translateY(9px) rotate(135deg);
+}
+
+.hamburger.open > div:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open > div:last-child {
+  -khtml-transform: translateY(-9px) rotate(-135deg);
+  transform: translateY(-9px) rotate(-135deg);
+}
+
+.overlay {
+  clip-path: circle(0% at 50% 0%);
+  transition: all 300ms ease-in-out;
+}
+
+.overlay.open {
+  clip-path: circle(150% at 50% 0%);
+}
+
+.mobileNav {
+  transition: all 300ms ease-in-out;
+  -khtml-transform: translateY(-700px);
+  transform: translateY(-700px);
+}
+
+.mobileNav.open {
+  transform: translateY(0px);
+  animation: springyDrop 300ms ease-in-out backwards;
+}
+
+@keyframes springyDrop {
+  0% {
+    transform: translateY(-700px) scale(0);
+  }
+  60% {
+    transform: translateY(20px);
+  }
+  90% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px) scale(1);
+  }
+}
+
 header {
   background: transparent;
   height: 60px;
@@ -137,6 +190,10 @@ header .getStartedBtn a {
 
 header .getStartedBtn a:hover {
   opacity: 0.6;
+}
+
+header .hamburger {
+  cursor: pointer;
 }
 
 header .hamburger > div {
