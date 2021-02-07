@@ -171,6 +171,7 @@ header ul.PCNav li {
 header ul.PCNav li a {
   padding: 10px;
   margin-left: 5px;
+  color: #222;
   font-size: 0.8rem;
 }
 
