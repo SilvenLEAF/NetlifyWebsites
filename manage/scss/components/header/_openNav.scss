@@ -24,7 +24,7 @@ $navTransition: all 300ms ease-in-out;
 
 .overlay {
   clip-path: circle(0% at 50% 0%);
-  transition: $navTransition;
+  // transition: $navTransition;
   
   &.open {
     clip-path: circle(150% at 50% 0%);
