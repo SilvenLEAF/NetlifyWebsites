@@ -12,4 +12,14 @@ main::after, footer {
 
 footer {
   background-color: $themeColor;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .copyright {
+    font-size: 0.7rem;
+
+  }
 }

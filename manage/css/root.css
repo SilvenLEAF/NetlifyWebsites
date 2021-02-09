@@ -223,5 +223,13 @@ main::after, footer {
 
 footer {
   background-color: orangered;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .copyright {
+  font-size: 0.7rem;
 }
 /*# sourceMappingURL=root.css.map */
