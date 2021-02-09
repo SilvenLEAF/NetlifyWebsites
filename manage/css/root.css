@@ -209,4 +209,19 @@ header .brandLogo img.logo {
   position: relative;
   top: 5px;
 }
+
+main {
+  min-height: calc(100vh - 60px);
+  margin-bottom: -120px;
+}
+
+main::after, footer {
+  display: block;
+  content: "";
+  height: 120px;
+}
+
+footer {
+  background-color: orangered;
+}
 /*# sourceMappingURL=root.css.map */
