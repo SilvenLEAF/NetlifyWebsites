@@ -19,4 +19,15 @@ header {
     }
   }
 
+
+
+  .hamburger {
+    >div {
+      width: 30px;
+      height: 2px;
+      margin: 7px;
+      background-color: $themeColor;
+    }    
+  }
+
 }
