@@ -1,0 +1,40 @@
+/* ---------------------------
+.        MEDIA QUERIES
+--------------------------- */
+@media (max-width: 63.9375em) {
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+@media (min-width: 64em) {
+  .hideOnPC {
+    display: none;
+  }
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f2f4;
+  font-family: sans-serif;
+  color: #124;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=root.css.map */
