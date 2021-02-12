@@ -37,4 +37,24 @@ li {
 a {
   text-decoration: none;
 }
+
+header {
+  height: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+}
+
+header .PCNav li {
+  display: inline-block;
+}
+
+header .PCNav li a {
+  margin: 5px;
+  padding: 10px 10px;
+  font-size: 0.9rem;
+  color: #124;
+}
 /*# sourceMappingURL=root.css.map */

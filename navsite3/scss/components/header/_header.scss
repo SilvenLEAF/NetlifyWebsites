@@ -1,0 +1,22 @@
+
+
+header {
+  height: $navbarHeight;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 40px;
+
+  .PCNav li {
+    display: inline-block;
+
+    a {
+      margin: 5px;
+      padding: 10px 10px;
+      font-size: 0.9rem;
+      color: $fontColor;
+    }
+  }
+
+}
