@@ -4,7 +4,7 @@ I'm trying to improve my FrontEND skills. This is a place where I create many am
 *** 
 
 ## Technologies
-***HTML5, CSS3, Vanilla JavaScript, SASS, Materialize***
+***HTML5, CSS3, Vanilla JavaScript, SASS/SCSS,  Materialize***
 
 ***
 ### SEE LIVE
