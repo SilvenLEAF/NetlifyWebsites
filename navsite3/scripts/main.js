@@ -22,3 +22,6 @@ function toggleMobileNav(){
   
   body.classList.toggle('noscroll');
 }
+
+
+console.log("testing credentials")
