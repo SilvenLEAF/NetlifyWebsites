@@ -64,4 +64,19 @@ header .hamburger > div {
   margin: 7px;
   background-color: #f00;
 }
+
+main {
+  min-height: 100vh;
+  margin-bottom: -120px;
+}
+
+main::after, footer {
+  display: block;
+  content: "";
+  height: 120px;
+}
+
+footer {
+  background-color: #f00;
+}
 /*# sourceMappingURL=root.css.map */
