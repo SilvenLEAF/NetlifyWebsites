@@ -38,8 +38,8 @@
 
 
   &.open {
-    // transform: translateX(0px);
+     transform: translateX(0px);
     // transform: translateY(0px);
-    clip-path: circle(150% at 100% 0%);
+    //clip-path: circle(150% at 100% 0%);
   }
 }
