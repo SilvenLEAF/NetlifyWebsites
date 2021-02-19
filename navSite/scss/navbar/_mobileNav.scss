@@ -9,9 +9,9 @@
 
   transition: $navTransition;
   // transform: translateX(300px);
-  // transform: translateX(-100vw);
+   transform: translateX(-100vw);
   // transform: translateY(100vh);
-  clip-path: circle(0% at 100% 0%);
+  //clip-path: circle(0% at 100% 0%);
   
 
   background-color: $navbarBG;
