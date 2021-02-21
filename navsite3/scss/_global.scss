@@ -12,6 +12,7 @@ body {
   padding: 0;
   background-color: $bodyBG;
   color: $fontColor;
+  font-family: sans-serif;
   overflow-x: hidden;
 
   &.noscroll {
