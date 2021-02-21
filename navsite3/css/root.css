@@ -101,4 +101,26 @@ header li:last-child a {
 header li:last-child a:hover {
   opacity: 0.6;
 }
+
+header .brandLogo {
+  text-align: center;
+}
+
+@media (max-width: 63.9375em) {
+  header .brandLogo {
+    width: 100%;
+  }
+}
+
+header .brandLogo .logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+header .hamburger > div {
+  width: 30px;
+  height: 2px;
+  margin: 7px;
+  background-color: #f00;
+}
 /*# sourceMappingURL=root.css.map */

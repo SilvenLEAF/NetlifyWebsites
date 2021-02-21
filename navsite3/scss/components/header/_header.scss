@@ -56,6 +56,26 @@ header {
     
   
   }
+
+  .brandLogo {
+    text-align: center;
+    @include breakpoint-down(medium){
+      width: 100%;      
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+  }
+  .hamburger {
+    >div {
+      width: 30px;
+      height: 2px;
+      margin: 7px;
+      background-color: $themeColor;
+    }
+  }
 }
 
 
