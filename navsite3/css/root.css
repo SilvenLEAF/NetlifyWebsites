@@ -16,6 +16,7 @@
 html {
   height: 100%;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 *, *::before, *::after {
@@ -59,7 +60,7 @@ header .PCNav li {
 header .PCNav li a {
   margin: 10px;
   padding: 10px 15px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 header li:not(:last-child) a {
@@ -115,6 +116,7 @@ header .brandLogo {
 header .brandLogo .logo {
   font-size: 1.5rem;
   font-weight: 700;
+  cursor: pointer;
 }
 
 header .hamburger > div {
@@ -122,5 +124,16 @@ header .hamburger > div {
   height: 2px;
   margin: 7px;
   background-color: #f00;
+}
+
+main {
+  min-height: 100vh;
+  margin-bottom: -120px;
+}
+
+main::after, footer {
+  display: block;
+  content: '';
+  height: 120px;
 }
 /*# sourceMappingURL=root.css.map */
