@@ -1,5 +1,5 @@
 main {
-  min-height: 100vh;
+  min-height: calc(100vh - #{$navbarHeight});
   margin-bottom: -$footerHeight;
 }
 
@@ -7,4 +7,15 @@ main::after, footer {
   display: block;
   content: '';
   height: $footerHeight;
+}
+
+footer {
+  background-color: $themeColor;
+
+  .copyright {
+    font-size: 0.7rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+  }
 }
