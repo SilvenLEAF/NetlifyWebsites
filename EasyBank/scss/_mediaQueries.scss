@@ -57,3 +57,23 @@ $breakpoints-down: ("small": "39.9375em", "medium": "63.9375em", "large": "87.43
     display: none;
   }
 }
+
+/* ---------------------------
+.           SCROLL
+--------------------------- */
+body::-webkit-scrollbar {
+  width: .5rem;
+  
+  
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;  
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  background: $themeColor;  
+}
+
