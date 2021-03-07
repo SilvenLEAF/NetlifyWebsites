@@ -34,4 +34,7 @@ li {
 
 a {
   text-decoration: none;
+  &.noLink {
+    color: $fontColor;
+  }
 }
