@@ -38,33 +38,6 @@ body {
 
 
 
-
-/* ---------------------------
-.           SCROLL
---------------------------- */
-body::-webkit-scrollbar {
-  width: 0.5rem;
-  
-  
-}
-
-body::-webkit-scrollbar-track {
-  background: #1e1e24;  
-  
-}
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 30px;
-  background: $themeColor;
-  border: 3px solid complement($color: $themeColor);    
-}
-
-
-
-
-
-
-
 /* -------------------------
 .         defaults
 ------------------------- */
